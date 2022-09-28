@@ -7,10 +7,10 @@ Project: A Novel Method for Handwritten Digit Recognition System
 
 Members:
 
-karthikeyan A
-kiruthika N
-kevin monic S
-jothika R
+1)karthikeyan A
+2)kiruthika N
+3)kevin monic S
+4)jothika R
 
 About Project:
 Handwriting recognition is one of the compelling research works going on because every individual in this world has their own style of writing.
