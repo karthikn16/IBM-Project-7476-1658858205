@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>result page</title>
+		<link rel="stylesheet" href="{{url_for('static',filename='css/result.css')}}" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Prediction</h1>
+			<div class="sub_container1">
+
+				
+				<div class="input_box box">
+					<img src="{{url_for('static',filename='data/')}}{{img_name}}" />
+				</div>
+				<div class="result_box box">
+					<div class="value">{{best.0}}</div>
+					<div class="v_accuracy">{{best.1}}%</div>
+				</div>
+			</div>
+			<h1>Other Prediction</h1>
+			<div class="other_predictions">
+                {% for x in others %}
+				<div class="r_box">
+					<h2>{{x.0}}</h2>
+					<div class="0_accu">{{x.1}}%</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</body>
+</html>
